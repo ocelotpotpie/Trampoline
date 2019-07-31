@@ -1,0 +1,22 @@
+name: ${project.name}
+version: ${project.version}
+author: totemo
+authors: []
+description: ${project.description}
+website: ${project.url}
+main: nu.nerd.trampoline.Trampoline
+api-version: 1.13
+
+permissions:
+  trampoline.console:
+    description: Permission to administer the plugin.
+    default: op
+
+commands:
+  trampoline:
+    description: ${project.name} administrative command.
+    permission: trampoline.console
+    usage: |
+
+      §e/<command> help§f - Show this help. Equivalent to §e/help /trampoline§f.  
+      §e/<command> reload§f - Reload the configuration.
